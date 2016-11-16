@@ -36,5 +36,32 @@
   Output:
   [1,1,2,"Fizz","Buzz",8,13,"Fizz",34,"Buzz",89,"Fizz",233,377,"Buzz","Fizz",1597,2584,4181,"FizzBuzz"]
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+var sample = 5;
 
-console.log('yay');
+var fibsFizzBuzz = function(n) {
+	var last1 = 1;
+	var last2 = 0;
+	var next;
+	var fB = [];
+	var fizzBuzz = function(n) {
+		if (n % 3 === 0 && n % 5 === 0) {
+			return 'FizzBuzz';
+		} else if (n % 3 === 0) {
+			return 'Fizz';
+		} else if (n % 5 === 0) {
+			return 'Buzz';
+		} else {
+			return n;
+		}
+	}
+	for (var i = 0; i < n; i++) {
+		next = last1 + last2;
+		fB.push(fizzBuzz(next));
+		console.log(next);
+		last1 = last2;
+		last2 = next;
+	}
+	return fB;
+}
+
+fibsFizzBuzz(sample);
