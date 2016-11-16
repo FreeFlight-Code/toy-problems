@@ -9,7 +9,7 @@
    persistence(999) === 4 because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2
    persistence(4) === 0 because 4 is already a one-digit number
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-var n = 39;
+var sample = 39;
 
 function persistence(num) {
 	var timesToMultiply = 0;
@@ -30,7 +30,7 @@ function persistence(num) {
 	}
 }
 
-persistence(n);
+persistence(sample);
 
 
 
@@ -43,7 +43,7 @@ persistence(n);
 
 	There will always be only one integer that appears an odd number of times.
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-var arr = [1, 2, 1, 2, -1, 2, 2, 4, 104, 104, 4, 1, 3, 1, 3];
+var sample = [1, 2, 1, 2, -1, 2, 2, 4, 104, 104, 4, 1, 3, 1, 3];
 
 function findOdd(A) {
   var count = 0;
@@ -61,4 +61,4 @@ function findOdd(A) {
   }
 }
 
-findOdd(arr);
+findOdd(sample);
