@@ -6,3 +6,15 @@
 
   Can you help her?
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+var sample = 'Fred';
+// var sample = 'Johnny';
+
+function greet(name){
+
+  if(name === "Johnny") {
+    return "Hello, my love!";
+  }
+  return "Hello, " + name + "!";
+}
+
+greet(sample);
