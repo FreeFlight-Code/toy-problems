@@ -9,16 +9,3 @@
    persistence(999) === 4 because 9*9*9 = 729, 7*2*9 = 126, 1*2*6 = 12, and finally 1*2 = 2
    persistence(4) === 0 because 4 is already a one-digit number
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
-
-
-
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-	FIND THE ODD INT
-	https://www.codewars.com/kata/find-the-odd-int/train/javascript
-
-	Given an array, find the int that appears an odd number of times.
-
-	There will always be only one integer that appears an odd number of times.
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
