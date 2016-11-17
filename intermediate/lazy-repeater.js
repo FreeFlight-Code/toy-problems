@@ -13,7 +13,7 @@
   abc(); // should return 'c' on this third call
   abc(); // should return 'a' again on this fourth call
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-var sample = 'abcde';
+var sample = 'abc';
 
 function makeLooper(str) {
   var index = -1; //start at -1 so we don't skip 0 index after we do index++
@@ -28,9 +28,7 @@ function makeLooper(str) {
 }
 
 var abc = makeLooper(sample);
-abc();
-abc();
-abc();
-abc();
-abc();
-abc();
+abc(); //returns 'a'
+abc(); //returns 'b'
+abc(); //returns 'c'
+abc(); //returns 'a' again
