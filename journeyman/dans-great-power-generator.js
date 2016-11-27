@@ -10,8 +10,3 @@
 
   Eg. if number = 7, and power = 2, result = 50.
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-function danspower(num, power) {
-  var numToPower = Math.pow(num, power);
-  return numToPower % 2 === 0 ? numToPower : Math.round(numToPower / 10) * 10;
-}
