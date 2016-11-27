@@ -1,0 +1,17 @@
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  DAN'S GREAT POWER GENERATOR
+  https://www.codewars.com/kata/dans-great-power-generator/train/javascript
+
+  Description:
+
+  Dan likes to find the nth power of number. But he doesn't like it when the result is odd!
+
+  Return the nth power of each number, unless the result is odd, in which case round the result to the nearest 10.
+
+  Eg. if number = 7, and power = 2, result = 50.
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+function danspower(num, power) {
+  var numToPower = Math.pow(num, power);
+  return numToPower % 2 === 0 ? numToPower : Math.round(numToPower / 10) * 10;
+}
