@@ -6,7 +6,10 @@
 
   The drawing below gives an idea of how to cut a given "true" rectangle into squares ("true" rectangle meaning that the two dimensions are different).
 
-  alternative text
+   _ _ _ _ _
+  |_|_|_|_2_|
+  |_|3|_|_|_|
+  |_|_|_|1|1|
 
   Can you translate this drawing into an algorithm?
 
