@@ -22,3 +22,8 @@
   string_to_number("1405")  == 1405
   string_to_number("-7")    == -7
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+var stringToNumber = function(str){
+  // put your code here
+  return +(str);
+}
