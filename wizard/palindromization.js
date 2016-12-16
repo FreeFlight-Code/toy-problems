@@ -4,7 +4,7 @@
 
   You are given string "elements" and an int "n". Your task is to return a string that is a palindrom using elements from the string "elements" with the length "n".
 
-  The format of the palindromization:
+  The format of the p alindromization:
 
   Your palindrome begins with the first element of "elements".
   After obtaining a pair, you insert the next element in "elements" to the palindrome.
