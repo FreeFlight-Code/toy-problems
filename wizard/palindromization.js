@@ -28,3 +28,17 @@
   n = 9 => result = "123121321"
   n = 10=> result = "1231221321"
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+function palindromization(element, n){
+  if (n < 2 || !element) return 'Error!';
+
+  var leftSide = Array(Math.floor(n / 2)).fill(null).map(function(c, i) {
+    return element[i % element.length];
+  });
+
+  var rightSide = leftSide.slice(0).reverse();
+
+  if (n % 2) leftSide.push(element[leftSide.length % element.length].toString());
+
+  return leftSide.concat(rightSide).join('');
+}
