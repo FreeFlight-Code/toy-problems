@@ -15,8 +15,6 @@
   sumPPG(iverson, jordan); // => 31.4
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-function expandedForm(num) {
-  return num.toString().split('').map(function(c, i) {
-    return +c * (Math.pow(10, num.toString().length - 1 - i));
-  }).filter(function(c) {return c}).join(' + ');
+function sumPPG(playerOne, playerTwo){
+  return playerOne.ppg + playerTwo.ppg;
 }
