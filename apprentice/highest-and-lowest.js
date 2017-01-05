@@ -17,4 +17,4 @@
 function highAndLow(numbers){
   var numArr = numbers.split(' ').map(function(c) {return +c;});
   return Math.max.apply(Math, numArr) + ' ' + Math.min.apply(Math, numArr);
-}
+} 
