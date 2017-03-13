@@ -21,3 +21,7 @@
   #3 Can Santa save Christmas?
   #4 How Many Presents?
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+function countDays(d){
+  var days = Math.round((d - new Date()) / 1000 / 60 / 60 / 24);
+  return days < 0 ? 'The day is in the past!' : days === 0 ? 'Today is the day!' : days + ' days';
+}
