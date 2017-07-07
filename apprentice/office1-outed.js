@@ -12,7 +12,7 @@
 
   Happiness rating will be total score / number of people in the room.
 
-  Note that your boss is in the room (boss), their score is worth double it's face value (but they are still just one person!).
+  Note that your boss is in the room (boss), their score is worth double its face value (but they are still just one person!).
 
   The Office II - Boredom Score
   The Office III - Broken Photocopier
