@@ -42,3 +42,24 @@ function grille(message, code) {
 }
 
 // grille('', 5)
+
+
+
+
+
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+  OTHER'S SOLUTIONS
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+function grille(message, code) {
+  const mask = ('0'.repeat(message.length)+code.toString(2)).slice(-message.length);
+  return [...message].filter((c,i)=>+mask[i]).join('');
+}
+
+
+
+function grille(message, code) {
+  let b = code.toString(2).split``.reverse()
+  return message.split``.reverse().map((c,i)=>+b[i]?c:'').reverse().join``
+}
