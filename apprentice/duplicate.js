@@ -21,6 +21,6 @@ function duplicate(array) {
   newArray.map(function(current) {
     return newArray.push(current);
   });
-  // return the newArray
+  // return the newArray 
   return newArray;
 }
