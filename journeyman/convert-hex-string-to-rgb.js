@@ -12,11 +12,3 @@
 
     hexStringToRGB("#FF9933") // returns {r:255, g:153, b:51}
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-hexStringToRGB("#FF9933");
-function hexStringToRGB(hex) {
-  var rgb = hex.match(/[^#]{1,2}/g).map(item => {
-    return parseInt(item, 16);
-  });
-  return {r: rgb[0], g: rgb[1], b: rgb[2]};
-}
