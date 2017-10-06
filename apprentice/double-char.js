@@ -1,4 +1,4 @@
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
   DOUBLE CHAR
   https://www.codewars.com/kata/double-char/train/javascript
 
@@ -9,8 +9,19 @@
   doubleChar("1234!_ ") ==> "11223344!!__  "
   
   Good Luck!
-/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
+// Solution #1
 function doubleChar(str) {
-  // Your code here
+  return str.split('').map(c => c + c).join('');
+}
+
+// Solution #2
+function doubleChar(str) {
+  return str.replace(/./g, c => c + c);
+}
+
+// Solution #3
+function doubleChar(str) {
+  return str.replace(/./g, '$&$&');
 }
