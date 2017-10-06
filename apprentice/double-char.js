@@ -11,17 +11,6 @@
   Good Luck!
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-// Solution #1
 function doubleChar(str) {
-  return str.split('').map(c => c + c).join('');
-}
-
-// Solution #2
-function doubleChar(str) {
-  return str.replace(/./g, c => c + c);
-}
-
-// Solution #3
-function doubleChar(str) {
-  return str.replace(/./g, '$&$&');
+  //
 }

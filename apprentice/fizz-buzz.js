@@ -14,12 +14,5 @@
 // Return an array
 function fizzbuzz(n)
 {
-  return Array.from(Array(n).keys())
-    .map(num => num + 1)
-    .map(num => (
-      num % 15 === 0 ? 'FizzBuzz'
-      : num % 3 === 0 ? 'Fizz'
-      : num % 5 === 0 ? 'Buzz'
-      : num
-    ));
+  //
 }
