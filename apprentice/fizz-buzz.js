@@ -11,8 +11,15 @@
   If the value is a multiple of 3 & 5: use the value 'FizzBuzz' instead
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
-// Solution #1
+// Return an array
 function fizzbuzz(n)
 {
-  return 
+  return Array.from(Array(n).keys())
+    .map(num => num + 1)
+    .map(num => (
+      num % 15 === 0 ? 'FizzBuzz'
+      : num % 3 === 0 ? 'Fizz'
+      : num % 5 === 0 ? 'Buzz'
+      : num
+    ));
 }
