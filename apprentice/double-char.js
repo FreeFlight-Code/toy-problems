@@ -1,18 +1,27 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*
-  FIZZ BUZZ
-  https://www.codewars.com/kata/fizz-buzz/train/javascript
+  DOUBLE CHAR
+  https://www.codewars.com/kata/double-char/train/javascript
 
-  Return an array containing the numbers from 1 to N, where N is the parametered value. N will never be less than 1.
+  Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
 
-  Replace certain values however if any of the following conditions are met:
-
-  If the value is a multiple of 3: use the value 'Fizz' instead
-  If the value is a multiple of 5: use the value 'Buzz' instead
-  If the value is a multiple of 3 & 5: use the value 'FizzBuzz' instead
+  doubleChar("String") ==> "SSttrriinngg"
+  doubleChar("Hello World") ==> "HHeelllloo  WWoorrlldd"
+  doubleChar("1234!_ ") ==> "11223344!!__  "
+  
+  Good Luck!
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 // Solution #1
-function fizzbuzz(n)
-{
-  return 
+function doubleChar(str) {
+  return str.split('').map(c => c + c).join('');
+}
+
+// Solution #2
+function doubleChar(str) {
+  return str.replace(/./g, c => c + c);
+}
+
+// Solution #3
+function doubleChar(str) {
+  return str.replace(/./g, '$&$&');
 }
