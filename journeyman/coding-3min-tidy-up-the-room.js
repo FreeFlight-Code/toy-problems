@@ -51,19 +51,19 @@
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
 
 function sc(room) {
-  let tidy = room.slice().map(arr => arr.map(item => ' '));
-  let sundries = room.slice();
+  let tidy = room.slice().map(arr => arr.map(item => ' ')); // make an empty room (tidy)
+  let sundries = room.slice(); // copy nested array argument, then flatten
   for (var i = 0; i < sundries.length; i++) {
     if (Array.isArray(sundries[i])) {
       sundries.splice(i, 1, ...sundries[i]);
       i--;
     }
   }
-  sundries = sundries.filter(sundry => sundry !== ' ');
-  const mLength = Math.ceil(Math.sqrt(sundries.length));
+  sundries = sundries.filter(sundry => sundry !== ' '); // sundries is array of non-spaces
+  const mLength = Math.ceil(Math.sqrt(sundries.length)); // mLength is horiz length of matrix
   for (let i = 0; i < mLength; i++) {
     for (let j = 0; j < mLength; j++) {
-      tidy[i].splice(j, 1, sundries[0] || ' ');
+      tidy[i].splice(j, 1, sundries[0] || ' '); // splice in sundries one at a time
       sundries.splice(0, 1);
     }
   }
