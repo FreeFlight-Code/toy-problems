@@ -11,7 +11,7 @@
   The next element will be paired inside the first pair.
   Repeat
   If you have reached the last element of "elements" then repeat the process from the start.
-  Error cases:
+  Error cases:asdf
   If the string elements is empty or n is smaller than 2, return the string "Error!"
 
   Examples:
