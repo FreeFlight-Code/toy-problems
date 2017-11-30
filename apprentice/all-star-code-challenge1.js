@@ -14,3 +14,12 @@
   var jordan =  { team: 'bulls', ppg: 20.2 };
   sumPPG(iverson, jordan); // => 31.4
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
+
+
+  function sumPPG (){
+    let total = 0;
+    for(let i = 0; i < arguments.length; i++){
+      total+=arguments[i].ppg;
+    }
+    return total;
+  }
